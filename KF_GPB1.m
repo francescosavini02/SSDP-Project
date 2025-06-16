@@ -106,7 +106,7 @@ for k = 2:T
         end
     end
 
-    % --- Merging step (Sec. 2.3.4: moment-matching for Gaussian mixtures) ---
+    % --- Merging step  ---
     P_mode_new = sum(p_joint, 2)';  % Marginal over m_k-1 → P(m_k | Z_k)
     x_new = zeros(1, M);
     P_new = zeros(1, M);
